@@ -44,12 +44,15 @@ public class FactorialSimulated {
             throw new IllegalArgumentException("n must be non-negative");
         }
 
-        // Push snapshots into the stack.
+        // Push snapshots into the stack, starting from the user's input.
         while (n>0){
             stack.push(new MyRecursionSnapShot(n, stage));
             n--;
             stage++;
         }
+
+        // Push a snapshot for the base case (0! = value 1) onto the stack.
+        stack.push(new MyRecursionSnapShot(1, stage));
 
         // Empty the stack, reading values of snapshots popped
         // and keeping a running product.
