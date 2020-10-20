@@ -42,6 +42,7 @@ public class FactorialSimulated {
 
         if(n<0) {
             throw new IllegalArgumentException("n must be non-negative");
+
         }
 
         // Push snapshots into the stack, starting from the user's input.
@@ -64,5 +65,6 @@ public class FactorialSimulated {
 
         System.out.println(product);
     }
+    
 
 }

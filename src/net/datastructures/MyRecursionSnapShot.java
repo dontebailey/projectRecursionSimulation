@@ -17,8 +17,6 @@ public class MyRecursionSnapShot {
     private int stage;
     private int value;
 
-    public MyRecursionSnapShot() {
-    }
 
     public MyRecursionSnapShot(int value, int stage) {
         this.value = value;
