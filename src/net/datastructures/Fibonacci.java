@@ -51,6 +51,17 @@ public class Fibonacci {
     }
   }
 
+//  1: n = 5 , return = {5 , 3}
+//  2: n = 4 , return = {3 , 2}
+//  3: n = 3 , return = {2 , 1}
+//  4: n = 2 , return = {1 ,1 }
+//  5: n = 1 , return = {1, 0 }
+
+
+
+
+
+
   /** Don't call this (infinite) version. */
   public static int fibonacci(int n) {
     return fibonacci(n);      // After all $F_n$ does equal $F_n$
